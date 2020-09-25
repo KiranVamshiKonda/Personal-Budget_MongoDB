@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
+    <!--SEO----description-->
+    <meta name="description" content="This is one of the best Budget management applications which helps you to save on your expenses by managing your budget">
+    <!--SEO----keywords-->
+    <meta name="keywords" content="Personal,budget,alerts,on track">
+    <!--SEO----Author-->
+    <meta name="Author" content="Kiran">
+    <!--SEO----Website Icon-->
+    <link rel="shortcut icon" type="image/png" href="img.png">
+    
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+<!--A11y---Skip to Content-->
+    <div>
+        <a class="skip-link" href='#main'>Skip to content</a>
+        
+      </div>
 
     <div class="menu">
         <ul>
@@ -18,7 +32,7 @@
         </ul>
     </div>
 
-    <div class="hero">
+    <div class="hero", id="main" >
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
     </div>
@@ -28,18 +42,22 @@
         <div class="page-area">
 
             <div class="text-box">
-                <h1>Stay on track</h1>
+                
+                    <h1>Stay on track</h1>
+
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
+               
             </div>
     
             <div class="text-box">
                 <h1>Alerts</h1>
+<!---Semantics---Highlighting the words -->
                 <p>
-                    What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
+                    What if your clothing budget ended? You will get an alert. <mark> goal is to never go over the budget.</mark>
                 </p>
             </div>
     
@@ -92,12 +110,32 @@
             </div>
 
         </div>
+        <figure>
+<!--A11y-   Picture-->
+            <img src="pic.jpg" alt="Picture depicts the coins being added into a jar" style="width:30%">
+<!---Semantics      Add fig Caption-->   
+            <figcaption>Fig.1 - Manage your Budget.</figcaption>
+          
+          </figure>
 
     </div>
+<!--Semantics----providing an option to get in touch at footer-->
+    <footer class="one">
+        <h3>Get in Contact</h3>
+<!---A11Y---Using form to enter the details-->
+        <form>
+        <label for="Enter your name" >Your Name:</label><br>
+        <input type="text" ><br><br>
+        <label for="Enter your Email Id" > Email Id:</label><br>
+        <input type="text" ><br><br>
+        <input type="Submit" value="Submit" > 
+         
+        </form>
+    </footer>
 
     <div class="bottom">
         <div class="center">
-            All rights reserved &copy; Fabio Nolasco
+            All rights reserved &copy; Kiran
         </div>
     </div>
 

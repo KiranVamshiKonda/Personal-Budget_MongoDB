@@ -7,6 +7,21 @@ body {
     font-family: Tahoma, Arial;
 }
 
+/*Skip to*/
+
+.skip-link {
+    background: #319795;
+    color: #fff;
+    font-weight: 700;
+    left: 50%;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+  
+  
+
+
 div.menu {
     width: 100%;
     background-color: #4d5791;
@@ -89,6 +104,19 @@ div.hero h2 {
     max-width: 340px;
     text-align: justify;
     margin: 20px;
+}
+
+/*Highlighting*/
+
+mark {
+    background-color: silver;
+    color: black;
+  }
+
+/*footer*/
+.one
+{
+   background-color: lightgrey; 
 }
 
 @media screen and (min-width: 768px) {
