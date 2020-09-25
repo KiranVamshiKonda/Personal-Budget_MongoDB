@@ -3,14 +3,14 @@
 }
 
 body {
-    font-size: 10px;
+    font-size: 12px;
     font-family: Tahoma, Arial;
 }
 
 /*Skip to*/
 
 .skip-link {
-    background: #319795;
+    background: #525252;
     color: #fff;
     font-weight: 700;
     left: 50%;
