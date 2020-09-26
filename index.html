@@ -23,18 +23,24 @@
         
       </div>
 
+
     <div class="menu">
+        <!--semantics-------adding a header-->
+        
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="about.html" title="">About</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
+    
     </div>
 
     <div class="hero", id="main" >
+    <header>
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
+    </header>
     </div>
 
     <div class="container center">
@@ -128,7 +134,8 @@
         <input id="Enter your name" type="text" name="Enter your name" ><br><br>
         <label for="Enter your Email Id" > Email Id:</label><br>
         <input id="Enter your Email Id" type="text" name="Enter your Email Id"><br><br>
-        <input type="Submit" value="Submit" >  
+<!---A11Y change----->
+        <input type="button" value="Submit" >  
         </form>
     </footer>
 
