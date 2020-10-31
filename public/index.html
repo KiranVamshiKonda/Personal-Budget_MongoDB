@@ -40,14 +40,14 @@
     
     </div>
 
-    <div class="hero", id="main" >
+    <div class="hero" >
     <header>
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
     </header>
     </div>
 
-    <div class="container center">
+    <main class="container center" id = "main">
 
         <div class="page-area">
 
@@ -128,7 +128,7 @@
           
           </figure>
 
-    </div>
+    </main>
 
 
     <!-------test-->
@@ -332,12 +332,14 @@ function change(data) {
         }
 
         function getBudget() {
+            //axios.get('http://localhost:3001/budget')
             axios.get('http://localhost:3000/budget')
             .then(function (res){
                 console.log(res.data);
-                for (var i=0; i < res.data.myBudget.length; i++){
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
+                for (var i=0; i < res.data.length; i++){
+                    dataSource.datasets[0].data[i] = res.data[i].budget;
+                    dataSource.datasets[0].backgroundColor[i] = res.data[i].color;
+                    dataSource.labels[i]=res.data[i].title;
                 }
                 createChart();
                 change(randomData());
